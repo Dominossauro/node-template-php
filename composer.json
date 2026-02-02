@@ -1,5 +1,5 @@
 {
-    "name": "dominossauro/app",
+    "name": "dominossauro/node-template-php",
     "type": "vcs",
     "config": {
         "preferred-install": "source"
@@ -9,6 +9,7 @@
     },
     "repositories": [],
     "dominossauro": {
+        "compatibility": "0.0.4",
         "nodes": [
             {
                 "name": "NodeTest",
@@ -17,10 +18,10 @@
                 "description": "This is a custom node.",
                 "color": "#FF5733",
                 "icon": "\ud83d\udee0\ufe0f",
-                "file": "composer/vendor/dominossauro/app/NodeTest.php",
+                "file": "composer/vendor/dominossauro/node-template-php/src/NodeTest.php",
                 "outputs": [
                     {
-                        "name": "output1",
+                        "name": "message",
                         "description": "Output variable 1",
                         "type": "string"
                     }
@@ -29,8 +30,7 @@
                     {
                         "name": "input1",
                         "classNodeMethod": "testMethod",
-                        "description": "Input variable 1",
-                        "type": "string"
+                        "description": "Input variable 1"
                     }
                 ],
                 "modal": {
